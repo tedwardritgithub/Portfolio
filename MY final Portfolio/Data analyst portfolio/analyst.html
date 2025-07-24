@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f7df06; /* Yellow hover effect */
+        }
+
+        h2, h3 {
+            margin: 0;
+            font-weight: bold;
+            color:#070707;
+        }
+        h1{
+             color: rgb(130, 255, 5);
+        }
+
+        section {
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 805px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 280px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            text-align: left;
+            background: #e6e7e7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgb(183, 2, 2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(3, 13, 192, 0.938);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #007BFF;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        .skills-list li {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            background: #e93d08; /* Orange hover effect */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #070707;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Download CV Button */
+        .download-cv {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #a92a03;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .download-cv:hover {
+            background: #d806a4; /* Darker orange on hover */
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007BFF;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 1000;
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile " target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/tedwardritgithub " target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+        <h1>Tengan Edward</h1>
+        <p><b>A Detailed-Oriented and Analytical Data Analyst with a knack of Transforming raw Data into meaniful Insights that drive Business Decisions</b></p>
+        <a href="images folder\CV.edit.pdf" download class="download-cv">Download CV</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images folder\img3.jpg" alt="Your Profile Picture">
+        <p>I'm a detail-oriented Data Analyst  passionate about transforming complex data into meaningful insights that drive informed decision-making.I specialize in data visualization, sales performance tracking, and operational reporting using tools like Excel, SQL, Python, and dashboarding platforms .   
+
+One of my key projects includes developing a Sales and Operations Dashboard for a hospital , where I analyzed patient records, product orders, and sales trends to deliver actionable insights. This dashboard empowered hospital staff to monitor performance in real time and optimize resource allocation. 
+
+I thrive in environments where data tells a story — and I enjoy using tools like Power BI, Tableau, and Excel  to bring those stories to life. My goal is to help organizations make smarter, data-driven decisions that lead to measurable improvements. </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <h3><b>Scientific Calculator</b></h3>
+            <p>Performed mathematical computations and provides a solution to all mathematical problems.</p>
+            <p><span>Tools</span>: Python, JavaScript,Html,CSS </p>
+            <a href="images folder/calulator/simple-calculator/index.html" target="_blank">View Project</a>
+        </div>
+         <div class="project">
+            <h3><b>Real-time data visualization</b></h3>
+            <p>A dynamic and interactive dashboard built to give real-time data visualization, responsive design, and modern UI components.</p>
+            <h5>Features</h5>
+            <p>Real-time data visualization with Chart.js </p>
+            <p>Responsive design for all devices</p>
+             <p>Animated statistics with
+            Dark/Light mode support</p>
+        
+            <p><span>Tools</span>: Python, JavaScript,Html,CSS </p>
+            <a href="dashboard-site\index.html" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Business Sales dashboard</h3>
+            <p>This dashboard provides a comprehensive overview of Companies sales, Sales records, and product order management. It offers real-time insights into key performance metrics such as daily sales trends, product order status, inventory levels, and products orders data. Designed for efficiency and clarity, the dashboard supports data-driven decision-making for Business administrators and sales teams, helping to streamline operations and improve service delivery.</p>
+            <p>Tools: Python,JavaScript,HTML,CSS,MySQL,Scikit-learn, Excel,PandasL</p>
+            <a href="Admin-Dashboard\index.html " target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/your-form-id " method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email:tenganedward448@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025  Tengan Edward. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to Top Button Logic
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
